@@ -103,6 +103,8 @@ window.result = 0;
   const result = getRouletteWheelNumber(newWheelIndex);
   window.result = result;
   console.log(window.result)
+  window.currentBets = currentBets;
+  console.log(window.currentBets)
   const resultColor = getRouletteWheelColor(newWheelIndex);
   (() => {
     const newRotaion = currentWheelRotation + (360 / 37) * speed;
@@ -129,6 +131,12 @@ window.result = 0;
     setTimeout(() => {
       const ele = document.getElementById("balance");
       bankBalance += (currentBets[result] * 35);
+      ele.innerHTML = bankBalance;
+      currentBets = {};
+    }, 5000);
+  } else {
+    setTimeout(() => {
+      const ele = document.getElementById("balance");
       ele.innerHTML = bankBalance;
       currentBets = {};
     }, 5000);

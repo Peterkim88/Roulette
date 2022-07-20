@@ -1,0 +1,28 @@
+.game-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.wheel-box {
+  display: flex;
+  padding-top: 10%;
+  height: 100%;
+  padding-bottom: 5%;
+  width: 90%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.board-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -20%;
+}
+
+.board-boundary {
+  background-color: darkgreen;
+}

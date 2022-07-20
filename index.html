@@ -9,15 +9,61 @@
     <title>Project Name</title>
   </head>
 
-  <div class="sidenav">
-    <p id="bank">
-      bank balance
-    </p>
-    <h1 id="balance">1000</h1>
-  </div>
-  <body>
-    <div id="app">
-        <div>
+  <body class="full-page">
+    <div class="navbar">
+      <div id="bank" class="bank">
+        <div class="game-title-label-box">
+          <label class="game-title-label">ROULETTE</label>
+        </div>
+        <div class="bank-balance-label-box">
+          <label class="bank-balance-label">
+            Bank Balance
+          </label>
+        </div>
+        <div class="bank-balance-box">
+          <div class="bank-balance-sign">$</div>
+          <div id="balance" class="bank-balance">
+            1000
+          </div>
+        </div>
+        <div class="chips-outer-box">
+          <div class="chips-inner-box">
+            <div id="chips-image-box-1" class="chips-image-box-1">
+              <img class="chips-image-1" src="./assets/white-chip.png">
+              <div>
+                <label id="chip1" class="chips-image-value-1">1</label>
+              </div>
+            </div>
+            <div id="chips-image-box-5" class="chips-image-box-5">
+              <img class="chips-image-5" src="./assets/red-chip.png">
+              <div>
+                <label id="chip5" class="chips-image-value-5">5</label>
+              </div>
+            </div>
+            <div id="chips-image-box-10" class="chips-image-box-10">
+              <img class="chips-image-10" src="./assets/blue-chip.png">
+              <div>
+                <label id="chip10" class="chips-image-value-10">10</label>
+              </div>
+            </div>
+            <div id="chips-image-box-25" class="chips-image-box-25">
+              <img class="chips-image-25" src="./assets/green-chip.png">
+              <div>
+                <label id="chip25" class="chips-image-value-25">25</label>
+              </div>
+            </div>
+            <div id="chips-image-box-100" class="chips-image-box-100">
+              <img class="chips-image-100" src="./assets/black-chip.png">
+              <div>
+                <label id="chip100" class="chips-image-value-100">100</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="app" class="game-body">
+        <div class="wheel-box">
           <div class="roulette-wheel">
             <div class="layer-2 wheel" style="transform: rotate(0deg);"></div>
             <div class="layer-3"></div>
@@ -38,10 +84,9 @@
               ></circle>
             </svg>
           </div>
-          <div id="board" class="sidenav"></div>
-          
-          <svg  version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="1100" height="330" viewBox="0 0 550 165" xml:space="preserve">
-          
+        </div>  
+        <div class="board-box">
+          <svg version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="1100" height="330" viewBox="0 0 550 165" xml:space="preserve">
             <g>
               <g>
                 <g>
@@ -227,12 +272,21 @@
                 <text transform="matrix(1 0 0 1 365.2524 139.8748)" fill="#fff" font-family="'Verdana'" font-size="12">Black</text>
               </g>
             </g>
-          
           </svg>
-          <script src="./dist/main.js"></script>
         </div>
       </div>
-      <div class="result"></div>
+      <script src="./dist/main.js"></script>
+      <div class="sidebar">
+        <div class="payout-card-box">
+          <img src="./assets/payout-card.png" alt="">
+        </div>
+        <div class="results-box">
+          <div class="results-label-box">
+            <label class="results-label">Results</label>
+          </div>
+          <div class="result"></div>
+        </div>
+      </div>
   </body>
 <body>
 </body>

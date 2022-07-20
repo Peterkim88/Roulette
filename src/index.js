@@ -102,13 +102,10 @@ window.result = 0;
   const newWheelIndex = currentWheelIndex - speed;
   const result = getRouletteWheelNumber(newWheelIndex);
   window.result = result;
-  console.log(window.result)
   window.currentBets = currentBets;
-  console.log(window.currentBets)
   const resultColor = getRouletteWheelColor(newWheelIndex);
   (() => {
     const newRotaion = currentWheelRotation + (360 / 37) * speed;
-    console.log(getRouletteWheelNumber(currentWheelIndex), "---> ", result);
     var myAnimation = anime({
       targets: [".layer-2", ".layer-4"],
       rotate: function() {
@@ -144,7 +141,6 @@ window.result = 0;
 
   (() => {
     const newRotaion = -4 * 360 + currentBallRotation;
-    console.log("newRotaion", newRotaion);
     var myAnimation1 = anime({
       targets: ".ball-container",
       translateY: [
@@ -250,15 +246,16 @@ document.querySelector(".roulette-wheel").addEventListener(
 window.startRotation = startRotation;
 
 function placeBet(num, value){
-  let wager = new chip(value);
+  // let wager = new chip(value);
   if (!currentBets[num]) currentBets[num] = 0;
   currentBets[num] += value;
+  // console.log(chipvalue)
+  console.log(currentBets)
   // currentBets.push(wager);
 }
 
 let boardNumbers = document.getElementsByClassName('nums')
 for (let i = 0; i < boardNumbers.length; i++){
-  // var button = document.getElementById(`${i}`);
   let button = boardNumbers[i];
   button.addEventListener('click', (e) => {
     placeBet(`${button.innerHTML}`, chipvalue);
@@ -268,7 +265,74 @@ for (let i = 0; i < boardNumbers.length; i++){
   })
 }
 
-function play(){
+let chip1 = document.getElementById('chip1');
+let chip5 = document.getElementById('chip5');
+let chip10 = document.getElementById('chip10');
+let chip25 = document.getElementById('chip25');
+let chip100 = document.getElementById('chip100');
+
+let chip1box = document.getElementById('chips-image-box-1')
+let chip5box = document.getElementById('chips-image-box-5')
+let chip10box = document.getElementById('chips-image-box-10')
+let chip25box = document.getElementById('chips-image-box-25')
+let chip100box = document.getElementById('chips-image-box-100')
+
+chip1.addEventListener('click', function (e) {
+  e.preventDefault();
+  chip1box.style.borderStyle = 'solid';
+  chip5box.style.borderStyle = 'hidden';
+  chip10box.style.borderStyle = 'hidden';
+  chip25box.style.borderStyle = 'hidden';
+  chip100box.style.borderStyle = 'hidden';
+  let newChipValue = 1;
+  chipvalue = newChipValue;
+})
+
+chip5.addEventListener('click', function (e) {
+  e.preventDefault();
+  chip1box.style.borderStyle = 'hidden';
+  chip5box.style.borderStyle = 'solid';
+  chip10box.style.borderStyle = 'hidden';
+  chip25box.style.borderStyle = 'hidden';
+  chip100box.style.borderStyle = 'hidden';
+  let newChipValue = 5;
+  chipvalue = newChipValue;
+})
+
+chip10.addEventListener('click', function (e) {
+  e.preventDefault();
+  chip1box.style.borderStyle = 'hidden';
+  chip5box.style.borderStyle = 'hidden';
+  chip10box.style.borderStyle = 'solid';
+  chip25box.style.borderStyle = 'hidden';
+  chip100box.style.borderStyle = 'hidden';
+  let newChipValue = 10;
+  chipvalue = newChipValue;
+})
+
+chip25.addEventListener('click', function (e) {
+  e.preventDefault();
+  chip1box.style.borderStyle = 'hidden';
+  chip5box.style.borderStyle = 'hidden';
+  chip10box.style.borderStyle = 'hidden';
+  chip25box.style.borderStyle = 'solid';
+  chip100box.style.borderStyle = 'hidden';
+  let newChipValue = 25;
+  chipvalue = newChipValue;
+})
+
+chip100.addEventListener('click', function (e) {
+  e.preventDefault();
+  chip1box.style.borderStyle = 'hidden';
+  chip5box.style.borderStyle = 'hidden';
+  chip10box.style.borderStyle = 'hidden';
+  chip25box.style.borderStyle = 'hidden';
+  chip100box.style.borderStyle = 'solid';
+  let newChipValue = 100;
+  chipvalue = newChipValue;
+})
+
+// function play(){
   
-}
+// }
 

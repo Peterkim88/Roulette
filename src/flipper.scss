@@ -6,8 +6,8 @@
 .flipper {
   display: inline-block;
   position: relative;
-  width: 96px;
-  height: 128px;
+  width: 48px;
+  height: 64px;
   transition: all 2s cubic-bezier(0.240, 1.650, 0.915, 0.835);
   transform-style: preserve-3d;
   font-family: monospace;
@@ -32,7 +32,7 @@
   align-content: center;
   flex-direction: column;
   text-align: center;
-  font-size: 76px;
+  font-size: 30px;
 }
 
 .front-face {
@@ -67,10 +67,10 @@
 }
 
 .result {
-  max-width: 500px;
-  margin: auto;
+  max-width: 370px;
+  // margin: auto;
   .flipper {
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 }

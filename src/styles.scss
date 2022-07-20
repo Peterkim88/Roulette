@@ -18,6 +18,16 @@ body {
   overflow: visible;
 }
 
+.full-page{
+  display: flex;
+  flex-direction: row;
+}
+
+.game-body{
+  display: flex;
+  flex-direction: row;
+}
+
 .roulette-wheel {
   float: right;
   width: 380px;

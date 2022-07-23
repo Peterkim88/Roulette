@@ -1,8 +1,10 @@
 .game-body {
   display: flex;
   flex-direction: column;
+  margin-top: -3%;
   height: 100%;
-  width: 50%;
+  width: 53%;
+  margin-left: -2%;
 }
 
 .wheel-box {
@@ -10,19 +12,941 @@
   padding-top: 10%;
   height: 100%;
   padding-bottom: 5%;
-  width: 90%;
+  width: 100%;
   justify-content: center;
   align-items: flex-start;
+  margin-left: -2%;
 }
 
 .board-box {
   display: flex;
-  width: 100%;
+  width: 980px;
+  height: 350px;
   justify-content: center;
-  align-items: flex-start;
-  margin-left: -20%;
+  align-items: center;
+  // margin-left: -20%;
 }
 
-.board-boundary {
+.board-table {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  width: 80%;
+}
+
+.board-table-nums-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  flex: 7;
+}
+
+.board-table-nums-0-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.board-table-nums-0 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.board-table-nums-1to36-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  flex: 12;
+}
+
+.board-table-nums-row {
+  display: flex;
+  padding: 1px;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.num-0 {
+  display: flex;
+  // position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   background-color: darkgreen;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-3 {
+  display: flex;
+  // position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-11 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-13 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-14 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-15 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-16 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-17 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-18 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-19 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-20 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-21 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-22 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-23 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-24 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-25 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-26 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-27 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-28 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-28 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-29 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-30 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-31 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-32 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-33 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-34 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-35 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform: rotate(-90deg);
+}
+.num-36 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+.num-211 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+.num-212 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+.num-213 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+.num-3112 {
+  display: flex;
+  // position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+.num-3212 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+.num-3312 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+.num-118 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+.num-even {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+.num-red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+.num-black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+.num-odd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+.num-1936 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  flex: 1;
+  // transform-box: rotate(90deg);
+}
+
+.nums-labels-odd {
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  width: 50px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg);
+}
+.nums-labels-even {
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  width: 50px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg);
+}
+.nums-label-0 {
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  background-color: darkgreen;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg);
+}
+.nums-label-2to1 {
+  display: flex;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background-color: darkgreen;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg);
+}
+.nums-labels-to12 {
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: darkgreen;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  width: 80px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(360deg);
+}
+.nums-labels-red {
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: red;
+  // border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  // border-color: white;
+  width: 110px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(360deg);
+}
+.nums-labels-black {
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  // border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  // border-color: white;
+  width: 110px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(360deg);
+}
+
+.board-table-nums-2to1-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex: 1;
+}
+
+.board-table-extra-options-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex: 3;
+}
+
+.board-table-extra-options-margin-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.board-table-extra-options-row{
+  display: flex;
+  // padding: 1px;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  // flex: 12;
+}
+
+.board-table-extra-options {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  flex: 12;
+}
+
+.board-table-options-absolute-div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.board-table-absolute-div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.board-bet-chip {
+  display: flex;
+  width: 80%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.board-bet-chip-extra-options {
+  display: flex;
+  width: 50%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.board-bet-chip-extra-options-colored {
+  display: flex;
+  width: 37%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.board-bet-amount {
+  display: flex;
+  width: 80%;
+  font-size: 15px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  visibility: hidden;
+  transform: rotate(90deg);
+}
+
+.board-bet-amount-extra-options {
+  display: flex;
+  width: 80%;
+  font-size: 15px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  visibility: hidden;
+  // transform: rotate(90deg);
 }

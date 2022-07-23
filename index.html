@@ -27,6 +27,14 @@
           </div>
         </div>
         <div class="chips-outer-box">
+          <div class="chips-selector-box">
+            <label class="chips-selector-label">
+              Chip Selector
+            </label>
+            <label class="chips-selector-label-directions">
+              (choose a chip)
+            </label>
+          </div>
           <div class="chips-inner-box">
             <div id="chips-image-box-1" class="chips-image-box-1">
               <img class="chips-image-1" src="./assets/white-chip.png">
@@ -60,6 +68,39 @@
             </div>
           </div>
         </div>
+        <div class="footer-box">
+          <div class="footer-inner-box">
+            <label class="profile-link-label">
+              (Profile Links)
+            </label>
+            <div class="footer-link-box">
+              <a class="footer-link" href='https://github.com/Peterkim88/Roulette'>
+                <div class="footer-image-box">
+                  <img class="footer-image" src="/assets/github.png" alt="github-icon" />
+                </div>
+                Github
+              </a>
+            </div>
+            <div class="footer-link-box">
+              <a class="footer-link" href='https://www.Linkedin.com/in/peter-kim-898aa223a'>
+                <img class="footer-image" src="/assets/linkedin.png" alt="linkedin-icon" />
+                Linkedin
+              </a>
+            </div>
+            <div class="footer-link-box">
+              <a class="footer-link" href='https://angel.co/u/hyun-il-peter-kim'>
+                <img class="footer-image" src="/assets/angellist.png" alt="angellist-icon" />
+                AngelList
+              </a>
+            </div>
+            <div class="footer-link-box">
+              <a class="footer-link" href='https://angel.co/u/hyun-il-peter-kim'>
+                <img class="footer-image" src="/assets/resume.png" alt="angellist-icon" />
+                Resume
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="app" class="game-body">
@@ -84,9 +125,690 @@
               ></circle>
             </svg>
           </div>
-        </div>  
+        </div>
         <div class="board-box">
-          <svg version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="1100" height="330" viewBox="0 0 550 165" xml:space="preserve">
+          <div class="board-table">
+            <div class="board-table-nums-box">
+              <div class="board-table-nums-0-box">
+                <div class="board-table-nums-0">
+                  <div class="num-0">
+                    <label id="nums-label-0" class="nums-label-0">
+                      <div class="board-table-absolute-div">
+                        0
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-0" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-0" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="board-table-nums-1to36-box">
+                <div class="board-table-nums-row">
+                  <div class="num-3">
+                    <label id="nums-label-3" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        3
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-3" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-3" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-6">
+                    <label id="nums-label-6" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        6
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-6" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-6" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-9">
+                    <label id="nums-label-9" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        9
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-9" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-9" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-12">
+                    <label id="nums-label-12" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        12
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-12" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-12" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-15">
+                    <label id="nums-label-15" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        15
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-15" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-15" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-18">
+                    <label id="nums-label-18" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        18
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-18" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-18" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-21">
+                    <label id="nums-label-21" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        21
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-21" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-21" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-24">
+                    <label id="nums-label-24" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        24
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-24" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-24" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-27">
+                    <label id="nums-label-27" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        27
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-27" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-27" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-30">
+                    <label id="nums-label-30" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        30
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-30" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-30" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-33">
+                    <label id="nums-label-33" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        33
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-33" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-33" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-36">
+                    <label id="nums-label-36" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        36
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-36" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-36" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="board-table-nums-row">
+                  <div class="num-2">
+                    <label id="nums-label-2" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        2
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-2" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-2" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-5">
+                    <label id="nums-label-5" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        5
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-5" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-5" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-8">
+                    <label id="nums-label-8" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        8
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-8" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-8" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-11">
+                    <label id="nums-label-11" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        11
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-11" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-11" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-14">
+                    <label id="nums-label-14" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        14
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-14" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-14" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-17">
+                    <label id="nums-label-17" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        17
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-17" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-17" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-20">
+                    <label id="nums-label-20" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        20
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-20" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-20" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-23">
+                    <label id="nums-label-23" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        23
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-23" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-23" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-26">
+                    <label id="nums-label-26" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        26
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-26" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-26" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-29">
+                    <label id="nums-label-29" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        29
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-29" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-29" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-32">
+                    <label id="nums-label-32" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        32
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-32" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-32" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-35">
+                    <label id="nums-label-35" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        35
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-35" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-35" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="board-table-nums-row">
+                  <div class="num-1">
+                    <label id="nums-label-1" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        1
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-1" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-1" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-4">
+                    <label id="nums-label-4" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        4
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-4" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-4" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-7">
+                    <label id="nums-label-7" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        7
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-7" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-7" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-10">
+                    <label id="nums-label-10" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        10
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-10" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-10" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-13">
+                    <label id="nums-label-13" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        13
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-13" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-13" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-16">
+                    <label id="nums-label-16" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        16
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-16" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-16" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-19">
+                    <label id="nums-label-19" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        19
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-19" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-19" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-22">
+                    <label id="nums-label-22" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        22
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-22" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-22" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-25">
+                    <label id="nums-label-25" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        25
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-25" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-25" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-28">
+                    <label id="nums-label-28" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        28
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-28" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-28" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-31">
+                    <label id="nums-label-31" class="nums-labels-odd">
+                      <div class="board-table-absolute-div">
+                        31
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-31" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-31" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-34">
+                    <label id="nums-label-34" class="nums-labels-even">
+                      <div class="board-table-absolute-div">
+                        34
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <img id="bet-chip-34" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-34" class="board-bet-amount"></label>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="board-table-nums-0-box">
+                <div class="num-211">
+                  <label id="nums-label-211" class="nums-label-2to1">
+                    <div class="board-table-absolute-div">
+                      2-1
+                    </div>
+                    <div class="board-table-absolute-div">
+                      <img id="bet-chip-211" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                    </div>
+                    <div class="board-table-absolute-div">
+                      <label id="bet-amount-211" class="board-bet-amount"></label>
+                    </div>
+                  </label>
+                </div>
+                <div class="num-212">
+                  <label id="nums-label-212" class="nums-label-2to1">
+                    <div class="board-table-absolute-div">
+                      2-1
+                    </div>
+                    <div class="board-table-absolute-div">
+                      <img id="bet-chip-212" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                    </div>
+                    <div class="board-table-absolute-div">
+                      <label id="bet-amount-212" class="board-bet-amount"></label>
+                    </div>
+                  </label>
+                </div>
+                <div class="num-213">
+                  <label id="nums-label-213" class="nums-label-2to1">
+                    <div class="board-table-absolute-div">
+                      2-1
+                    </div>
+                    <div class="board-table-absolute-div">
+                      <img id="bet-chip-213" class="board-bet-chip" src="/assets/bet-chip.png" alt="">
+                    </div>
+                    <div class="board-table-absolute-div">
+                      <label id="bet-amount-213" class="board-bet-amount"></label>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="board-table-extra-options-box">
+              <div class="board-table-extra-options-margin-box">
+                <div class="board-table-nums-0">
+                  <div class="board-table-extra-options-to12-box-margin">
+                    <!-- <label id="nums-label-0" class="nums-label-extra-options-to12-left-margin">
+                    </label> -->
+                  </div>
+                </div>
+              </div>
+              <div class="board-table-extra-options">
+                <div class="board-table-extra-options-row">
+                  <div class="num-3112">
+                    <label id="nums-label-3112" class="nums-labels-to12">
+                      <div class="board-table-options-absolute-div">
+                        1-12
+                      </div>
+                      <div class="board-table-options-absolute-div">
+                        <img id="bet-chip-3112" class="board-bet-chip-extra-options" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-3112" class="board-bet-amount-extra-options"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-3212">
+                    <label id="nums-label-3212" class="nums-labels-to12">
+                      <div class="board-table-options-absolute-div">
+                        13-24
+                      </div>
+                      <div class="board-table-options-absolute-div">
+                        <img id="bet-chip-3212" class="board-bet-chip-extra-options" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-3212" class="board-bet-amount-extra-options"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-3312">
+                    <label id="nums-label-3312" class="nums-labels-to12">
+                      <div class="board-table-options-absolute-div">
+                        25-36
+                      </div>
+                      <div class="board-table-options-absolute-div">
+                        <img id="bet-chip-3312" class="board-bet-chip-extra-options" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-3312" class="board-bet-amount-extra-options"></label>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="board-table-extra-options-row">
+                  <div class="num-118">
+                    <label id="nums-label-118" class="nums-labels-to12">
+                      <div class="board-table-options-absolute-div">
+                        1-18
+                      </div>
+                      <div class="board-table-options-absolute-div">
+                        <img id="bet-chip-118" class="board-bet-chip-extra-options" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-118" class="board-bet-amount-extra-options"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-even">
+                    <label id="nums-label-even" class="nums-labels-to12">
+                      <div class="board-table-options-absolute-div">
+                        EVEN
+                      </div>
+                      <div class="board-table-options-absolute-div">
+                        <img id="bet-chip-even" class="board-bet-chip-extra-options" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-even" class="board-bet-amount-extra-options"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-red">
+                    <label id="nums-label-red" class="nums-labels-red">
+                      <div class="board-table-options-absolute-div">
+                        RED
+                      </div>
+                      <div class="board-table-options-absolute-div">
+                        <img id="bet-chip-red" class="board-bet-chip-extra-options-colored" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-red" class="board-bet-amount-extra-options"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-black">
+                    <label id="nums-label-black" class="nums-labels-black">
+                      <div class="board-table-options-absolute-div">
+                        BLACK
+                      </div>
+                      <div class="board-table-options-absolute-div">
+                        <img id="bet-chip-black" class="board-bet-chip-extra-options-colored" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-black" class="board-bet-amount-extra-options"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-odd">
+                    <label id="nums-label-odd" class="nums-labels-to12">
+                      <div class="board-table-options-absolute-div">
+                        ODD
+                      </div>
+                      <div class="board-table-options-absolute-div">
+                        <img id="bet-chip-odd" class="board-bet-chip-extra-options" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-odd" class="board-bet-amount-extra-options"></label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="num-1936">
+                    <label id="nums-label-1936" class="nums-labels-to12">
+                      <div class="board-table-options-absolute-div">
+                        19-36
+                      </div>
+                      <div class="board-table-options-absolute-div">
+                        <img id="bet-chip-1936" class="board-bet-chip-extra-options" src="/assets/bet-chip.png" alt="">
+                      </div>
+                      <div class="board-table-absolute-div">
+                        <label id="bet-amount-1936" class="board-bet-amount-extra-options"></label>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="board-table-extra-options-margin-box">
+                <div class="board-table-nums-0">
+                  <div class="board-table-extra-options-to12-box-margin">
+                    <!-- <label id="nums-label-0" class="nums-label-extra-options-to12-left-margin">
+                    </label> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div id="board-box" class="board-box">
+          <svg id="board-svg" version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="1100" height="330" viewBox="0 0 550 165" xml:space="preserve">
             <g>
               <g>
                 <g>
@@ -273,20 +995,138 @@
               </g>
             </g>
           </svg>
-        </div>
+        </div> -->
+        <!-- <div id="board-chips-box" class="board-chips-box">
+          <div class="board-chips-table-border">
+            <div class="board-chips-top-row">
+              <div class="board-chip-box-3">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-6">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-9">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-12">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-15">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-18">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-21">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-24">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-27">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-30">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-33">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-36">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+            </div>
+            <div class="board-chips-top-row">
+              <div class="board-chip-box-3">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-6">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-9">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-12">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-15">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-18">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-21">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-24">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-27">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-30">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-33">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-36">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+            </div>
+            <div class="board-chips-top-row">
+              <div class="board-chip-box-3">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-6">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-9">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-12">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-15">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-18">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-21">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-24">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-27">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-30">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-33">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+              <div class="board-chip-box-36">
+                <img src="./assets/bet-chip.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
-      <script src="./dist/main.js"></script>
       <div class="sidebar">
         <div class="payout-card-box">
-          <img src="./assets/payout-card.png" alt="">
+          <img class="payout-card-image" src="./assets/roulette_directions.png" alt="">
         </div>
         <div class="results-box">
           <div class="results-label-box">
-            <label class="results-label">Results</label>
+            <label class="results-label">Winning Numbers</label>
           </div>
           <div class="result"></div>
         </div>
       </div>
+      <script src="./dist/main.js"></script>
   </body>
 <body>
 </body>

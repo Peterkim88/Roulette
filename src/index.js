@@ -55,6 +55,22 @@ const rouletteWheelNumbers = [
   26
 ];
 
+const boardOptions = [
+  0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,
+  16,17,18,19,20,21,22,23,24,25,26,27,28,
+  29,30,31,32,33,34,35,36,211,212,213,
+  3112,3212,3312,118,'even','red','black',
+  'odd',1936
+]
+
+const extraOptionsPayoutTwo = [
+  118,'even','red','black','odd',1936
+]
+
+const extraOptionsPayoutThree = [
+  211,212,213,3112,3212,3312
+]
+
 const getRouletteWheelNumber = index =>
   rouletteWheelNumbers[index % 37 !== 0 ? 37 - Math.abs(index % 37) : 0];
 
@@ -85,17 +101,17 @@ function addFlipper() {
 
 window.result = 0;
   
-  function startRotation(speed) {
-    if (isRotating) {
-      return;
-    }
-    
-    const ele = document.getElementById("balance");
-    ele.innerHTML = bankBalance;
+function startRotation(speed) {
+  if (isRotating) {
+    return;
+  }
+  
+  const ele = document.getElementById("balance");
+  ele.innerHTML = bankBalance;
 
-    isRotating = true;
-    
-    const writeResult = addFlipper();
+  isRotating = true;
+  
+  const writeResult = addFlipper();
     
   const bezier = [0.165, 0.84, 0.44, 1.005];
 
@@ -124,21 +140,153 @@ window.result = 0;
       }
     });
   })();
-  if (currentBets[result]){
+  // if (currentBets[result]){
+  //   const ele = document.getElementById("balance");
+  //   setTimeout(() => {
+  //       setTimeout(() => {
+  //         boardOptions.forEach((number) => {
+  //           let numDivBetChip = document.getElementById(`bet-chip-${number}`);
+  //           let currentNumDivBetAmount = document.getElementById(`bet-amount-${number}`)
+  //           numDivBetChip.style.visibility = 'hidden';
+  //           currentNumDivBetAmount.style.visibility = 'hidden';
+  //           currentBets = {};
+  //         })
+  //       }, 8000)
+  //       ele.innerHTML = bankBalance;
+  //       rouletteWheelNumbers.forEach((number) => {
+  //         let numDivBetChip = document.getElementById(`bet-chip-${number}`);
+  //         let currentNumDivBetAmount = document.getElementById(`bet-amount-${number}`)
+  //         numDivBetChip.style.visibility = 'hidden';
+  //         currentNumDivBetAmount.style.visibility = 'hidden';
+  //         if (number === result){
+  //           numDivBetChip.style.visibility = 'visible';
+  //           currentNumDivBetAmount.style.visibility = 'visible';
+  //           currentNumDivBetAmount.innerHTML = (currentBets[number] * 35)
+  //           bankBalance += (currentBets[number] * 35);
+  //         } else if ((currentBets[number] && number === 118 && ([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18].includes(result)))){
+  //           numDivBetChip.style.visibility = 'visible';
+  //           currentNumDivBetAmount.style.visibility = 'visible';
+  //           currentNumDivBetAmount.innerHTML = (currentBets[number] * 2)
+  //           bankBalance += (currentBets[number] * 2);
+  //         } else if ((currentBets[number] && number === 1936 && ([19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36].includes(result)))){
+  //           numDivBetChip.style.visibility = 'visible';
+  //           currentNumDivBetAmount.style.visibility = 'visible';
+  //           currentNumDivBetAmount.innerHTML = (currentBets[number] * 2)
+  //           bankBalance += (currentBets[number] * 2);
+  //         }
+  //       })
+  //     }, 5000);
+  // } 
+  // else {
+  //   setTimeout(() => {
+  //     const ele = document.getElementById("balance");
+  //     ele.innerHTML = bankBalance;
+  //     boardOptions.forEach((number) => {
+  //       let numDivBetChip = document.getElementById(`bet-chip-${number}`);
+  //       let currentNumDivBetAmount = document.getElementById(`bet-amount-${number}`)
+  //       numDivBetChip.style.visibility = 'hidden';
+  //       currentNumDivBetAmount.style.visibility = 'hidden';
+  //     })
+  //     currentBets = {};
+  //   }, 8000);
+  // }
+  // const ele = document.getElementById("balance");
+  setTimeout(() => {
+    boardOptions.forEach((number) => {
+      let numDivBetChip = document.getElementById(`bet-chip-${number}`);
+      let currentNumDivBetAmount = document.getElementById(`bet-amount-${number}`)
+      numDivBetChip.style.visibility = 'hidden';
+      currentNumDivBetAmount.style.visibility = 'hidden';
+      if (number === result && currentBets[number]){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 35)
+        bankBalance += (currentBets[number] * 35);
+      }
+      if ((currentBets[number] && number === 118 && ([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18].includes(result)))){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 2)
+        bankBalance += (currentBets[number] * 2);
+      } 
+      if ((currentBets[number] && number === 'even' && ([2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36].includes(result)))){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 2)
+        bankBalance += (currentBets[number] * 2);
+      }
+      if ((currentBets[number] && number === 'red' && ([2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36].includes(result)))){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 2)
+        bankBalance += (currentBets[number] * 2);
+      }
+      if ((currentBets[number] && number === 'black' && ([1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35].includes(result)))){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 2)
+        bankBalance += (currentBets[number] * 2);
+      }
+      if ((currentBets[number] && number === 'odd' && ([1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35].includes(result)))){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 2)
+        bankBalance += (currentBets[number] * 2);
+      }
+      if ((currentBets[number] && number === 1936 && ([19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36].includes(result)))){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 2)
+        bankBalance += (currentBets[number] * 2);
+      }
+      if ((currentBets[number] && number === 211 && ([3,6,9,12,15,18,21,24,27,30,33,36].includes(result)))){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 3)
+        bankBalance += (currentBets[number] * 3);
+      }
+      if ((currentBets[number] && number === 212 && ([2,5,8,11,14,17,20,23,26,29,32,35].includes(result)))){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 3)
+        bankBalance += (currentBets[number] * 3);
+      }
+      if ((currentBets[number] && number === 213 && ([1,4,7,10,13,16,19,22,25,28,31,34].includes(result)))){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 3)
+        bankBalance += (currentBets[number] * 3);
+      }
+      if ((currentBets[number] && number === 3112 && ([1,2,3,4,5,6,7,8,9,10,11,12].includes(result)))){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 3)
+        bankBalance += (currentBets[number] * 3);
+      }
+      if ((currentBets[number] && number === 3212 && ([13,14,15,16,17,18,19,20,21,22,23,24].includes(result)))){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 3)
+        bankBalance += (currentBets[number] * 3);
+      }
+      if ((currentBets[number] && number === 3312 && ([25,26,27,28,29,30,31,32,33,34,35,36].includes(result)))){
+        numDivBetChip.style.visibility = 'visible';
+        currentNumDivBetAmount.style.visibility = 'visible';
+        currentNumDivBetAmount.innerHTML = (currentBets[number] * 3)
+        bankBalance += (currentBets[number] * 3);
+      }
+    })
+    ele.innerHTML = bankBalance;
     setTimeout(() => {
-      const ele = document.getElementById("balance");
-      bankBalance += (currentBets[result] * 35);
-      ele.innerHTML = bankBalance;
-      currentBets = {};
-    }, 5000);
-  } else {
-    setTimeout(() => {
-      const ele = document.getElementById("balance");
-      ele.innerHTML = bankBalance;
-      currentBets = {};
-    }, 5000);
-  }
-
+      boardOptions.forEach((number) => {
+        let numDivBetChip = document.getElementById(`bet-chip-${number}`);
+        let currentNumDivBetAmount = document.getElementById(`bet-amount-${number}`)
+        numDivBetChip.style.visibility = 'hidden';
+        currentNumDivBetAmount.style.visibility = 'hidden';
+        currentBets = {};
+      })
+    }, 5000)
+  }, 5000);
   (() => {
     const newRotaion = -4 * 360 + currentBallRotation;
     var myAnimation1 = anime({
@@ -246,24 +394,31 @@ document.querySelector(".roulette-wheel").addEventListener(
 window.startRotation = startRotation;
 
 function placeBet(num, value){
-  // let wager = new chip(value);
   if (!currentBets[num]) currentBets[num] = 0;
   currentBets[num] += value;
-  // console.log(chipvalue)
-  console.log(currentBets)
-  // currentBets.push(wager);
+  // console.log(currentBets)
 }
 
-let boardNumbers = document.getElementsByClassName('nums')
-for (let i = 0; i < boardNumbers.length; i++){
-  let button = boardNumbers[i];
-  button.addEventListener('click', (e) => {
-    placeBet(`${button.innerHTML}`, chipvalue);
-    const ele = document.getElementById("balance");
-    bankBalance -= chipvalue;
-    ele.innerHTML = bankBalance;
+boardOptions.forEach((number) => {
+  const numDiv = document.getElementById(`nums-label-${number}`);
+  let numDivBetChip = document.getElementById(`bet-chip-${number}`);
+  return numDiv.addEventListener('click', (e) => {
+    e.preventDefault();
+    let currentNum = number;
+    if(bankBalance >= chipvalue){
+      placeBet(currentNum, chipvalue);
+      numDivBetChip.style.visibility = 'visible';
+      let currentNumDivBetAmount = document.getElementById(`bet-amount-${currentNum}`)
+      if (currentBets[currentNum]){
+        currentNumDivBetAmount.innerHTML = currentBets[currentNum]
+        currentNumDivBetAmount.style.visibility = 'visible';
+      }
+      const ele = document.getElementById("balance");
+      bankBalance -= chipvalue;
+      ele.innerHTML = bankBalance;
+    }
   })
-}
+})
 
 let chip1 = document.getElementById('chip1');
 let chip5 = document.getElementById('chip5');

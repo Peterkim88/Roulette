@@ -1674,6 +1674,12 @@ body {
   visibility: hidden;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .payout-card-box {
   display: flex;
   margin-top: 40px;
